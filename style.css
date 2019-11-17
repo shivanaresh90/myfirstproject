@@ -1,0 +1,132 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Bitter', serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#main-login-screen {
+    background: url('/img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#main-login-screen::after {
+    background-color: #262626;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.7;
+}
+.inner-login-screen {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.login-screen-text {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.main-login {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.logo-area {
+    width: 200px;
+    margin: 0 auto 20px;
+
+}
+.logo-area img {
+   max-width: 200px;
+    height: auto;
+}
+
+.form-area{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.form-area input {
+     background: none;
+     width: 96%;
+     border: 1px solid #ddd;
+     padding: 10px 2%;
+     color: #ffffff;
+     margin-bottom: 15px;
+     border-radius: 5px;
+     font-size: 15px;
+
+}
+.form-area [type="submit"]{
+    background: #69d0f7;
+    border: 1px solid #69d0f7;
+    width: 200px;
+    cursor: pointer;
+    transition: .5s;
+}
+.form-area [type="submit"]:hover {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    color: #262626;
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.footer a {
+   text-align: center;
+   color: #ffffff;
+   text-decoration: underline;
+}
+.footer .sign-up {
+    width: 171px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    color: #262626;
+    padding: 12px 15px;
+    display: block;
+    margin: 30px auto 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+ }
+ .footer .sign-up:hover {
+     background-color: #69d0f7;
+     border: 1px solid #69d0f7;
+     color: #ffffff;
+ }
+
+ .footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+ }
+ .footer ul li {
+     display: inline-block;
+     margin: 0 6px;
+}
+.footer ul li a{
+    text-decoration: none;
+    font-size: 20px;
+} 
+.footer ul li a:hover{
+    color: #69d0f7;
+}
